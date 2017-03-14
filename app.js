@@ -82,3 +82,16 @@ var oneAndPike = {
 // for (var i  = 0; i < cookieArr.length; i++) {
 //
 // }
+=======
+var cookieStore = {
+  maxHrlyCustomer = ,
+  minHrlyCustomer = ,
+  avgCookiesPerCust = ,
+  customersPerHr = function(){
+    Math.floor(Math.random()*100);
+  }
+  cookiesPerHr = function(){
+    avgCookiesPerCust * customersPerHr;
+  }
+}
+>>>>>>> 379889bfe82122db047405b704c768b8cc505085
