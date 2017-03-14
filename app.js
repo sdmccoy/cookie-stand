@@ -2,65 +2,65 @@
 
 var cookieStand = {
   name: '1st and Pike',
-  minHrlyCustomers = ,
-  maxHrlyCustomers = ,
-  avgCookiesPerCust = ,
-  var CustomersPerHr = function() {
+  minHrlyCustomers: 23,
+  maxHrlyCustomers: 65,
+  avgCookiesPerCust: 6.3,
+  customersPerHr: function() {
     return Math.floor(Math.random() * (maxHrlyCustomers - minHrlyCustomers + 1)) + minHrlyCustomers;
-  }
-  var cookiesPerHr =  function() {
-    return CustomersPerHr * avgCookiesPerCust;
-  }
-}
+  },
+  cookiesPerHr:  function() {
+    return customersPerHr * avgCookiesPerCust;
+  },
+};
 
 var cookieStand = {
   name: 'SeaTac Airport',
-  minHrlyCustomers = ,
-  maxHrlyCustomers = ,
-  avgCookiesPerCust = ,
-  var CustomersPerHr = function() {
+  minHrlyCustomers: 3,
+  maxHrlyCustomers: 24,
+  avgCookiesPerCust: 1.2,
+  customersPerHr: function() {
     return Math.floor(Math.random() * (maxHrlyCustomers - minHrlyCustomers + 1)) + minHrlyCustomers;
-  }
-  var cookiesPerHr =  function() {
-    return CustomersPerHr * avgCookiesPerCust;
-  }
-}
+  },
+  cookiesPerHr:  function() {
+    return customersPerHr * avgCookiesPerCust;
+  },
+};
 
 var cookieStand = {
   name: 'Seattle Center',
-  minHrlyCustomers = ,
-  maxHrlyCustomers = ,
-  avgCookiesPerCust = ,
-  var CustomersPerHr = function() {
+  minHrlyCustomers: 23,
+  maxHrlyCustomers: 65,
+  avgCookiesPerCust: 6.5,
+  customersPerHr: function() {
     return Math.floor(Math.random() * (maxHrlyCustomers - minHrlyCustomers + 1)) + minHrlyCustomers;
-  }
-  var cookiesPerHr =  function() {
-    return CustomersPerHr * avgCookiesPerCust;
-  }
-}
+  },
+  cookiesPerHr:  function() {
+    return customersPerHr * avgCookiesPerCust;
+  },
+};
 
 var cookieStand = {
   name: 'Capitol Hill',
-  minHrlyCustomers = ,
-  maxHrlyCustomers = ,
-  avgCookiesPerCust = ,
-  var CustomersPerHr = function() {
+  minHrlyCustomers: 20,
+  maxHrlyCustomers: 38,
+  avgCookiesPerCust: 2.3,
+  customersPerHr: function() {
     return Math.floor(Math.random() * (maxHrlyCustomers - minHrlyCustomers + 1)) + minHrlyCustomers;
-  }
-  var cookiesPerHr =  function() {
-    return CustomersPerHr * avgCookiesPerCust;
-  }
-}
+  },
+  cookiesPerHr:  function() {
+    return customersPerHr * avgCookiesPerCust;
+  },
+};
 
 var cookieStand = {
   name: 'Alki',
-  minHrlyCustomers = ,
-  maxHrlyCustomers = ,
-  avgCookiesPerCust = ,
-  var CustomersPerHr = function() {
+  minHrlyCustomers: 2,
+  maxHrlyCustomers: 16,
+  avgCookiesPerCust: 4.6,
+  customersPerHr: function() {
     return Math.floor(Math.random() * (maxHrlyCustomers - minHrlyCustomers + 1)) + minHrlyCustomers;
-  }
-  var cookiesPerHr =  function() {
-    return CustomersPerHr * avgCookiesPerCust;
-  }
-}
+  },
+  cookiesPerHr:  function() {
+    return customersPerHr * avgCookiesPerCust;
+  },
+};
