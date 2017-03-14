@@ -24,7 +24,7 @@ function cookieStand(name, minHrlyCustomers, maxHrlyCustomers, avgCookiesPerCust
       this.total += cookiesPerHr;
     }
   };
-
+// commment to delete
   this.tableData = function() {
     this.dailyCookies();
     var table = document.getElementsByTagName('table')[0];
