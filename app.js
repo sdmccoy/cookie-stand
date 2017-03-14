@@ -26,18 +26,37 @@ function cookieStand(name, minHrlyCustomers, maxHrlyCustomers, avgCookiesPerCust
 
   this.createListItems = function() {
     this.dailyCookies();
-    var listHeading = document.createElement('h2');
-    listHeading.innerText = this.name;
-    body.appendChild(listHeading);
-    var firstUL = document.createElement('ul');
-    for (var i = 0; i < storeHrs.length; i++) {
-      var newEl = document.createElement('li');
-      newEl.innerText = storeHrs[i] + ': ' + this.salesArr[i] + ' cookies.';
-      firstUL.appendChild(newEl);
-    }
-    body.appendChild(firstUL);
+    // // tableHead.innerText = this.name;
+    // for (var i = 0; i < storeHrs.length; i++) {
+    //   var tableRow = document.createElement('tr');
+    //   tableRow.innerText = storeHrs[i];
+    //   thead.appendChild(tr);
+    // }
+  //   var firstUL = document.createElement('ul');
+  //   for (var i = 0; i < storeHrs.length; i++) {
+  //     var newEl = document.createElement('li');
+  //     newEl.innerText = storeHrs[i] + ': ' + this.salesArr[i] + ' cookies.';
+  //     firstUL.appendChild(newEl);
+  //   }
+  //   body.appendChild(firstUL);
+  // };
   };
 }
+
+function createTable() {
+  var table = document.createElement('table');
+  body.appendChild(table);
+  var tableHead = document.createElement('thead');
+  table.appendChild(tableHead);
+  var tRow = document.createElement('tr');
+  tableHead.appendChild(tRow);
+  for (var i = 0; i < storeHrs.length; i++) {
+    var th = document.createElement('th');
+    th.innerText = storeHrs[i];
+    tRow.appendChild(th);
+  }
+};
+createTable();
 
 var oneAndPike = new cookieStand('1st and Pike', 23, 65, 6.3);
 var seaTacAirport = new cookieStand('SeaTac Airport', 3, 24, 1.2);
