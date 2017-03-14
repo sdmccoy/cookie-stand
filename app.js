@@ -1,21 +1,28 @@
 'use strict';
 
+var storeHrs = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '8pm'];
+
 var oneAndPike = {
   name: '1st and Pike',
   minHrlyCustomers: 23,
   maxHrlyCustomers: 65,
   avgCookiesPerCust: 6.3,
-  storeHrs: [1, 2, 3, 4, 5, 6],
   customersPerHr: function() {
     return Math.floor(Math.random() * ((this.maxHrlyCustomers - this.minHrlyCustomers + 1) + this.minHrlyCustomers));
     console.log(customersPerHr);
   },
+
   cookiesPerHr: function() {
+    var salesArr = [];
     for (var i = 0; i < storeHrs.length; i++) {
-      return this.customersPerHr() * this.avgCookiesPerCust;
+      var salesPerHr = Math.floor(this.customersPerHr() * this.avgCookiesPerCust);
+      salesArr.push(salesPerHr);
     }
+    this.salesArr = salesArr;
+    return salesArr;
   },
 };
+
 //
 // var seaTacAirport = {
 //   name: 'SeaTac Airport',
