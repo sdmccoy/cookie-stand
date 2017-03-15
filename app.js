@@ -68,3 +68,16 @@ for (var i = 0; i < allStores.length; i++) {
   var aStore = allStores[i];
   aStore.tableData();
 }
+
+var form = document.getElementById('storeform');
+function inputFormData(event) {
+  event.preventDefault();
+  var theform = event.target;
+  console.log(theform.elements.storename.value);
+  console.log(theform.elements.mincust.value);
+  console.log(theform.elements.maxcust.value);
+  console.log(theform.elements.avgcookies.value);
+}
+var testname = document.getElementById('storename');
+console.log(testname);
+form.addEventListener('submit',inputFormData);
