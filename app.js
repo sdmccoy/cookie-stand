@@ -35,9 +35,9 @@ function CookieStand(name, minHrlyCustomers, maxHrlyCustomers, avgCookiesPerCust
     var tableBody = document.getElementsByTagName('tbody')[0];
     var tRow = document.createElement('tr');
     tableBody.appendChild(tRow);
-    var nameTD = document.createElement('td');
-    nameTD.innerText = this.name;
-    tRow.appendChild(nameTD);
+    var nameTH = document.createElement('th');
+    nameTH.innerText = this.name;
+    tRow.appendChild(nameTH);
     for (var i = 0; i < storeHrs.length - 1; i++) {
       var newTD = document.createElement('td');
       newTD.innerText = this.salesArr[i];
@@ -68,3 +68,21 @@ for (var i = 0; i < allStores.length; i++) {
   var aStore = allStores[i];
   aStore.tableData();
 }
+
+var form = document.getElementById('storeform');
+function inputFormData(event) {
+  event.preventDefault();
+  var theform = event.target;
+  var newName = event.target.storename.value;
+  var newMinCust = Math.floor(event.target.mincust.value);
+  var newMaxCust = Math.floor(event.target.maxcust.value);
+  var newAvgCookies = event.target.avgcookies.value;
+  if (newMinCust > newMaxCust) {
+    alert('Minimum Customer should be less than Maximum Customer.');
+  } else {
+    var newStore = new CookieStand(newName, newMinCust, newMaxCust, newAvgCookies);
+    newStore.tableData();
+  }
+}
+
+form.addEventListener('submit',inputFormData);
