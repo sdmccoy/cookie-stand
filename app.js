@@ -73,11 +73,16 @@ var form = document.getElementById('storeform');
 function inputFormData(event) {
   event.preventDefault();
   var theform = event.target;
-  console.log(theform.elements.storename.value);
-  console.log(theform.elements.mincust.value);
-  console.log(theform.elements.maxcust.value);
-  console.log(theform.elements.avgcookies.value);
+  var newName = event.target.storename.value;
+  var newMinCust = Math.floor(event.target.mincust.value);
+  var newMaxCust = Math.floor(event.target.maxcust.value);
+  var newAvgCookies = event.target.avgcookies.value;
+  if (newMinCust > newMaxCust) {
+    alert('Minimum Customer should be less than Maximum Customer.');
+  } else {
+    var newStore = new CookieStand(newName, newMinCust, newMaxCust, newAvgCookies);
+    newStore.tableData();
+  }
 }
-var testname = document.getElementById('storename');
-console.log(testname);
+
 form.addEventListener('submit',inputFormData);
