@@ -82,7 +82,34 @@ function inputFormData(event) {
   } else {
     var newStore = new CookieStand(newName, newMinCust, newMaxCust, newAvgCookies);
     newStore.tableData();
+    var table = document.getElementsByTagName('table')[0];
+    var tFoot = document.getElementsByTagName('tfoot')[0];
+    table.removeChild(tFoot);
+    createTotalsRow();
   }
 }
+form.reset();
 
 form.addEventListener('submit',inputFormData);
+
+function createTotalsRow () {
+  var table = document.getElementsByTagName('table')[0];
+  body.appendChild(table);
+  var tFoot = document.createElement('tfoot');
+  table.appendChild(tFoot);
+  var tRow = document.createElement('tr');
+  tFoot.appendChild(tRow);
+  var totalsTH = document.createElement('th');
+  totalsTH.innerText = 'Totals';
+  tRow.appendChild(totalsTH);
+  for (var i = 0; i < storeHrs.length - 1; i++) {
+    var sumHrs = 0;
+    for (var k = 0; k < allStores.length; k++) {
+      sumHrs += allStores[k].salesArr[i];
+    }
+    var footerTH = document.createElement('th');
+    footerTH.innerText = sumHrs;
+    tRow.appendChild(footerTH);
+  }
+};
+createTotalsRow();
