@@ -72,7 +72,6 @@ for (var i = 0; i < allStores.length; i++) {
 var form = document.getElementById('storeform');
 function inputFormData(event) {
   event.preventDefault();
-  var theform = event.target;
   var newName = event.target.storename.value;
   var newMinCust = Math.floor(event.target.mincust.value);
   var newMaxCust = Math.floor(event.target.maxcust.value);
