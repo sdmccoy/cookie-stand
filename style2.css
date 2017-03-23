@@ -5,6 +5,7 @@ highlight color rgb(212, 255, 206) #d4ffce*/
 body {
   width: 800px;
   background-color: white;
+  margin: auto;
 }
 
 * {
@@ -21,8 +22,8 @@ header {
   background-color: rgb(255, 232, 217);
   width: 800px;
   top: 0px;
-  left: 0px;
-  right: 0px;
+  /*left: 0px;
+  right: 0px;*/
   z-index: 1;
 }
 
@@ -97,7 +98,7 @@ h2 {
   margin-top: 114px;
   width: 800px;
   height: 270px;
-  /*border: 2px solid gray;*/
+  text-align: center;
 }
 
 #familyphoto {
@@ -110,14 +111,12 @@ h2 {
 }
 
 .abouttext {
-  display: inline-block;
   position: absolute;
-  width: 50%;
+  width: 45%;
   height: auto;
   top: 40px;
-  /*overflow: hidden;*/
   float: left;
-  margin: 80%;
+  left: 51%;
   border: 2px solid black;
 }
 
@@ -125,7 +124,10 @@ h2 {
   position: relative;
   width: 800px;
   height: 270px;
-  /*border: 2px solid gray;*/
+}
+
+.merchphoto {
+  text-align: center;
 }
 
 #merchphoto1 {
@@ -137,7 +139,6 @@ h2 {
   top: 40px;
   left: 10px;
   border: 1px solid black;
-  /*margin-left: 30px;*/
 }
 
 #merchphoto2 {
@@ -149,8 +150,8 @@ h2 {
   top: 40px;
   right: 35%;
   border: 1px solid black;
-  /*margin-left: 30px;*/
 }
+
 #merchphoto3 {
   position: absolute;
   display: block;
@@ -160,7 +161,6 @@ h2 {
   top: 40px;
   right: 66%;
   border: 1px solid black;
-  /*margin-left: 30px;*/
 }
 
 #events {
