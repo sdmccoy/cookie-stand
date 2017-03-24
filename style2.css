@@ -5,11 +5,11 @@ highlight color rgb(212, 255, 206) #d4ffce*/
 body {
   width: 800px;
   background-color: white;
+  margin: auto;
 }
 
 * {
   box-sizing: border-box;
-  /*border: 2px orange;*/
 }
 
 .clearfloat {
@@ -21,16 +21,11 @@ header {
   background-color: rgb(255, 232, 217);
   width: 800px;
   top: 0px;
-  left: 0px;
-  right: 0px;
   z-index: 1;
 }
 
 .fishphoto1 {
   float: left;
-  /*width: 50px;
-  height: 50px;*/
-
 }
 
 h1 {
@@ -64,7 +59,7 @@ nav ul {
   font-size: 1.1em;
   border-left: 1px solid black;
   border-top: 1px solid black;
-
+  border-bottom: 1px solid black;
 }
 #cu {
   border-right: 1px solid black;
@@ -97,7 +92,7 @@ h2 {
   margin-top: 114px;
   width: 800px;
   height: 270px;
-  /*border: 2px solid gray;*/
+  text-align: center;
 }
 
 #familyphoto {
@@ -110,14 +105,12 @@ h2 {
 }
 
 .abouttext {
-  display: inline-block;
   position: absolute;
-  width: 50%;
+  width: 45%;
   height: auto;
   top: 40px;
-  /*overflow: hidden;*/
   float: left;
-  margin: 80%;
+  left: 51%;
   border: 2px solid black;
 }
 
@@ -125,42 +118,43 @@ h2 {
   position: relative;
   width: 800px;
   height: 270px;
-  /*border: 2px solid gray;*/
+}
+
+.merchphoto {
+  text-align: center;
 }
 
 #merchphoto1 {
   position: absolute;
   display: block;
   float: left;
-  width: 30px;
-  height: 30px;
-  top: 40px;
-  left: 10px;
+  width: 150px;
+  height: 150px;
+  top: 60px;
+  left: 10%;
   border: 1px solid black;
-  /*margin-left: 30px;*/
 }
 
 #merchphoto2 {
   position: absolute;
   display: block;
   float: left;
-  width: 25px;
-  height: 25px;
-  top: 40px;
-  right: 35%;
+  width: 150px;
+  height: 150px;
+  top: 60px;
+  right: 40%;
   border: 1px solid black;
-  /*margin-left: 30px;*/
 }
+
 #merchphoto3 {
   position: absolute;
   display: block;
   float: left;
-  width: 25px;
-  height: auto;
-  top: 40px;
-  right: 66%;
+  width: 150px;
+  height: 150px;
+  top: 60px;
+  right: 10%;
   border: 1px solid black;
-  /*margin-left: 30px;*/
 }
 
 #events {

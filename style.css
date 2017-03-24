@@ -1,20 +1,22 @@
+/*main color rgb(255, 232, 217) #ffe8d9
+secondary color rgb(158, 153, 204) #9e99cc
+highlight color rgb(212, 255, 206) #d4ffce*/
+
 body {
-  background-color: rgba(255, 65, 165, 1);
+  margin: auto;
 }
 
 header {
   width: auto;
   height: auto;
-  background-color: rgba(30, 185, 205, .8);
+  background-color: #ffe8d9;
   border: 2px solid black;
   border-radius: 10px;
-  /*position: relative;*/
   }
 
 img {
   display: block;
   margin: 10px auto 10px auto;
-  box-shadow: 5px 5px 5px black;
 }
 
 h1 {
@@ -26,7 +28,7 @@ h1 {
   background-color: rgba(30, 185, 205, 0.1);
   width: 70%;
   margin: 5px auto 10px auto;
-  box-shadow: 5px 5px 5px black;
+  color: #9e99cc;
 }
 
 h2 {
@@ -41,13 +43,14 @@ table {
   margin: auto;
   margin-top: 10px;
   border: 2px solid black;
-  background-color: rgba(255, 235, 90, 0.9);
+  background-color: #ffe8d9;
   border-radius: 10px;
   padding: 20px;
 }
 
 th {
   font-size: 1.25em;
+  background-color: #ffe8d9;
 }
 
 td {
@@ -55,6 +58,7 @@ td {
   text-align: center;
   font-size: 2em;
   padding: 5px;
+  background-color: #d4ffce;
 }
 
 label {
