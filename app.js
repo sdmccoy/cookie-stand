@@ -87,9 +87,12 @@ function inputFormData(event) {
     createTotalsRow();
   }
 }
-form.reset();
 
-form.addEventListener('submit',inputFormData);
+function formReset() {
+  form.reset();
+}
+
+form.addEventListener('submit',formReset);
 
 function createTotalsRow () {
   var table = document.getElementsByTagName('table')[0];
