@@ -85,14 +85,11 @@ function inputFormData(event) {
     var tFoot = document.getElementsByTagName('tfoot')[0];
     table.removeChild(tFoot);
     createTotalsRow();
+    form.reset();
   }
-}
+};
 
-function formReset() {
-  form.reset();
-}
-
-form.addEventListener('submit',formReset);
+form.addEventListener('submit',inputFormData);
 
 function createTotalsRow () {
   var table = document.getElementsByTagName('table')[0];
